@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+  <style>
+    /* custom scroll bar */
+      ::-webkit-scrollbar {
+          width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+          /*background: #888;*/
+          background: #394dd4;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+          /*background: #555;*/
+          background: #3955ff;
+      }
+      /* :root {
+        color-scheme: light dark !important; 
+      } */
+    .float{
+      position: absolute;
+      top: 0px;
+      /* left: 10px; */
+      font-size: 60px;
+      color: crimson;
+    }
+    span{
+      color: #921b1b69;
+    }
+    input[type=text] {
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        padding-left: 12px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid #DDDDDD;
+        /* border: 1px solid rgba(81, 203, 238, 1);
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
+        transition: all 0.30s ease-in-out;
+    }
+ 
+    input[type=text]:focus {
+        box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+        padding: 3px 0px 3px 3px;
+        padding-left: 22px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+  </style>
+<body>
+      <div class="float">
+        <h1 class="title">Hello<span>World.</span></h1>
+      </div>
+  <div class="wrapper">
+    <section class="form login">
+      <header>User Login</header>
+      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <div class="error-text"></div>
+        <div class="field input">
+          <label>Email Address</label>
+          <input type="text" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="field input">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Enter your password" required>
+          <i class="fas fa-eye"></i>
+        </div>
+        <div class="field button">
+          <input class="btnn" type="submit" name="submit" value="Continue to Login">
+        </div>
+      </form>
+      <!-- <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div> -->
+    </section>
+  </div>
+
+</body>
+
